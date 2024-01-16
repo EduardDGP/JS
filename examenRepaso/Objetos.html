@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Persona {
+            
+            constructor(nombre, edad, genero){
+                this.nombre = nombre;
+                this.edad = edad;
+                this.genero = genero;
+            }
+            
+            objDetalle(nombre, edad, genero){
+                console.log(`Me llamo ${this.nombre} tengo ${this.edad} y soy ${this.genero}`); 
+            }
+        };
+
+        class Estudiante extends Persona{
+
+            constructor (curso, grupo){
+                this.curso = curso;
+                this.grupo = grupo;
+            }
+            
+            registrar (curso, grupo){
+                console.log(`Estoy estudiando ${this.curso} en el grupo ${this.grupo}`);
+            }
+            
+        }
+
+        class Profesor extends Persona {
+            
+            constructor (titulo, experiencia){
+                this.titulo = titulo;
+                this.experiencia = experiencia;
+            }
+
+            asignar (asignatura, nivel){
+                console.log (`Mi asignatura es ${this.asignatura} en el nivel ${this.nivel}`);
+            }
+        }
+        const estudiante1 = new Estudiante(20, 1);
+        const profesor1 = new Profesor("Profesor", 40);
+
+        // Llamar a los métodos
+        estudiante1.objDetalle;
+        console.log(estudiante1.registrar());
+
+        profesor1.objDetalle();
+        console.log(profesor1.asignar());
+    </script>
+</body>
+</html>

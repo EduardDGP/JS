@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+main {
+    padding-top: 20px;
+}
+
+.card-body {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.text-muted {
+    font-size: 0.85rem;
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="row justify-content-evenly">
+        <div class="col-md-3 mb-4 p-5">
+            <div class="card mb-4 p-5" style="max-width: 540px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRzQIQ868eGXrwRN9BPAIzDh50vrP2xmfzVQ&usqp=CAU" class="img-fluid rounded-start" alt="DESCRIPCION_DE_LA_IMAGEN">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" id="carTitle"></h5>
+                    <p class="card-text" id="carDescription"></p>
+                    <img id="carImg" class="img-fluid rounded-start" alt="Descripción de la imagen">
+                    <p class="card-text"><small class="text-muted" id="carInfo"> </p>
+                    <select id="carOptions" class="form-select form-select-md mb-3">
+                    </select>
+                    <a href="#" class="btn btn-primary">COMPRAR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>

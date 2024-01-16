@@ -1,0 +1,55 @@
+body {
+    height: 90vh;
+}
+
+.form-container {
+    max-width: 500px; /* Ajusté el ancho del contenedor principal */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Aumenté el radio de las esquinas */
+    
+}
+
+.buscar {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.lista-tareas {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-tareas li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-minus-circle {
+    padding-top: 5px;
+    color: #F71E35;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-plus,
+.fa-download {
+    color: bisque;
+    font-size: large;
+    cursor: pointer;
+}
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.file-input-container input[type="file"] {
+    display: none;
+}
